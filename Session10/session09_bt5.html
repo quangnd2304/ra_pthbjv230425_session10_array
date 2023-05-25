@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 5</title>
+</head>
+
+<body>
+    <script>
+        // B1: Nhập điểm html, css, js
+        let html = Number(prompt("Nhập vào điểm html"));
+        let css = Number(prompt("Nhập vào điểm css"));
+        let js = Number(prompt("Nhập vào điểm javascript"));
+        // B2: Tính điểm trung bình
+        let avgMark = (html + css + js) / 3;
+        // B3: xếp loại học viên
+        // B3.1. Sử dụng if...elseif...else
+        let xepLoai;
+        if (avgMark < 5) {
+            xepLoai = "Yếu";
+        } else if (avgMark < 6) {
+            xepLoai = "Kém";
+        } else if (avgMark < 7) {
+            xepLoai = "Trung bình";
+        } else if (avgMark < 8) {
+            xepLoai = "Khá";
+        } else if (avgMark < 9) {
+            xepLoai = "Giỏi";
+        } else {
+            xepLoai = "Xuất sắc";
+        }
+        // Bước 3.2: Sử dụng switch...case
+        // switch (avgMark) {
+        //     case 0:
+        //     case 1:
+        //     case 2:
+        //     case 3:
+        //     case 4:
+        //         xepLoai = "Yếu";
+        //         break;
+        //     case 5:
+        //         xepLoai = "Kém";
+        //         break;
+        //     case 6:
+        //         xepLoai = "Trung bình";
+        //         break;
+        //     case 7:
+        //         xepLoai = "Khá";
+        //         break;
+        //     case 8:
+        //         xepLoai = "Giỏi";
+        //         break;
+        //     case 9:
+        //     default:
+        //         xepLoai = "Xuất sắc";
+        // }
+        // Bước 4: In ra điểm trung bình và xếp loại
+        alert("Điểm trung bình: " + avgMark + " - Xếp loại: " + xepLoai);
+    </script>
+</body>
+
+</html>

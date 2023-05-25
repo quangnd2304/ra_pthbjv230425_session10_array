@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mảng một chiều</title>
+</head>
+
+<body>
+    <script>
+        // C1: Khai báo mảng 1 chiều bằng cách Literal
+        // var|let|const arrName = [value1,value2,....,valueN]
+        let arrNumber1 = [3, 5, 7, 2, 9];//arrNumber1: lenght=5, indexMax = 4
+        // C2: Khai báo mảng 1 chiều bằng array constructor
+        let arrNumber2 = new Array(2, 4, 6, 8);//arrNumber2: lenght=4, indexMax =3
+        // Truy cập vào phần tử của mảng: arrName[index]
+        // In ra phần tử có chỉ số là 2
+        console.log("Giá trị phần tử có chỉ số 2 là: ", arrNumber1[2]);
+        // In ra giá trị phần tử có chỉ số là 5 trong mảng arrNumber2
+        console.log("Giá trị phần tử có chỉ số 5 là: ", arrNumber2[5]);
+        // Khai báo mảng chứa các giá trị gồm nhiều kiểu dữ liệu
+        let arrNumber3 = [2, 5, "Hà", "Sang", true];
+        // In ra giá trị phần tử có chỉ số là 3
+        console.log("Giá trị phần tử có chỉ số 3 là: ", arrNumber3[3]);
+        // Khai báo mảng là một biến hằng số
+        const arrNumber4 = [4, 7, 9];
+        // Thay đổi giá trị phần tử có chỉ số là 1
+        arrNumber4[1] = 100;
+        arrNumber4[3] = 150;
+        arrNumber4[5] = 200;
+        console.log("Giá trị phần tử có chỉ số 1 trong arrNumber4 là: ", arrNumber4[1]);
+        console.log("Giá trị các phần tử trong mảng là: ", arrNumber4);
+        // Duyệt mảng và tính tổng các phần tử của mảng
+        arrNumber5 = [1, 7, 3, 8];
+        let total = 0;
+        for (let i = 0; i < arrNumber5.length; i++) {
+            total += arrNumber5[i];
+        }
+        console.log("Tổng các số trong mảng là: ", total);
+    </script>
+</body>
+
+</html>

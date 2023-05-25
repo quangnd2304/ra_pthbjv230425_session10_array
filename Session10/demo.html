@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Tính tổng các số chẵn đến a
+        let a = Number(prompt("Nhập vào một số"));
+        // Khai báo biến tổng các số chẵn
+        let total = 0;
+        console.log("Các số chẵn là:");
+        for (let i = 1; i <= a; i++) {
+            if (i % 2 == 0) {
+                console.log(i);
+                total += i;
+            }
+        }
+        console.log("Tổng các số chẵn là: ", total);
+    </script>
+</body>
+
+</html>

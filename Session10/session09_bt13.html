@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 13</title>
+</head>
+
+<body>
+    <script>
+        // B1: Nhập vào các số nguyên dương
+        // B2: tính tổng
+        // B3: kết thúc khi nhập vào số nguyên âm
+        let number;
+        let total = 0;
+        do {
+            number = Number(prompt("Nhập vào một số nguyên"));
+            if (number >= 0) {
+                total += number;
+            }
+        } while (number >= 0);
+        alert("Tổng các số nguyên dương vừa nhập là: " + total)
+
+    </script>
+</body>
+
+</html>

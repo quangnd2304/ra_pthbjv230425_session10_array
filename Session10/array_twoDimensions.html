@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mảng 2 chiều</title>
+</head>
+
+<body>
+    <script>
+        // C1: Khai báo mảng 2 chiều gồm 3 dòng và 4 cột bằng literal
+        let arrNumber1 = [[2, 3, 4, 5], [6, 7, 8, 9], [10, 11, 12, 13]];
+        // In ra giá trị phần tử có chỉ số dòng là 2 và chỉ số cột là 3
+        console.log("Giá trị phần tử có chỉ số dòng 2, cột 3 là: ", arrNumber1[2][3]);
+        // C2: Khai báo mảng 2 chiều gồm 3 dòng và 2 cột bằng Array contructor
+        let arrNumber2 = new Array(new Array(1, 2), new Array(3, 4), new Array(5, 6));
+        console.log("Giá trị các phần tử của mảng arrNumber2 là: ", arrNumber2);
+        // Tính tổng tất cả các phần tử trong mảng arrNumber2
+        let total = 0;
+        for (let i = 0; i < 3; i++) {
+            // Duyệt tất cả các dòng
+            for (let j = 0; j < 4; j++) {
+                // Duyết tất cả các cột trong dòng --> các phần tử arrNumber1[i][j]
+                total += arrNumber1[i][j];
+            }
+        }
+        console.log("Tổng các số trong mảng là: ", total);
+    </script>
+</body>
+
+</html>

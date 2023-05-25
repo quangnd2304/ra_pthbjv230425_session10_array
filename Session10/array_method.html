@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các hàm làm việc với mảng</title>
+</head>
+
+<body>
+    <script>
+        let arrNumber = [1, 2, 3];
+        console.log("Các phần tử trong mảng ban đầu " + arrNumber);
+        // push(item1,item2...): Thêm các phần tử vào cuối mảng
+        arrNumber.push(4);
+        arrNumber.push(5, 6, 7);
+        // pop(): xóa phần tử cuối cùng trong mảng
+        arrNumber.pop();
+        arrNumber.pop();
+        // unshift(item1,item2...): Thêm các phần tử vào đầu mảng
+        arrNumber.unshift(0);
+        arrNumber.unshift(-2, -1);
+        // shift(): xóa phần tử ở đầu mảng
+        arrNumber.shift();
+        // In các phần tử trong mảng
+        console.log("arrNumber---->" + arrNumber);
+        // arr1.concat(arr2): trả ra mảng mới là mảng gồm các phần tử của cả arr1,arr2
+        let arr1 = [1, 2, 3];
+        let arr2 = [4, 5];
+        let arr3 = arr1.concat(arr2);
+        console.log("arr3---->" + arr3);
+        //arr.include(value,start): Kiểm tra value có trong mảng từ chỉ số start hay không
+        let arr4 = [3, 5, 7, 9, 11, 33];
+        // Kiểm tra trong mảng có giá trị 9 hay không
+        console.log("Kiểm tra 9 có tồn tại trong mảng hay không: ", arr4.includes(9));
+        // Kiểm tra trong mảng có giá trị 9 từ vị trí 4 hay không
+        console.log("Kiểm tra 9 có tồn tại trong mảng tính từ index=4:", arr4.includes(9, 4));
+        console.log("Chỉ số của phần tử có giá trị là 9 trong mảng là: ", arr4.indexOf(9));
+        // Chuyển tử array ---> string:array.join("seperator")
+        console.log("Chuyển sang string: ", arr4.join("-"));
+        console.log("Chuỗi đảo ngược của arr4 là: ", arr4.reverse());
+        console.log("Cắt mảng từ vị trí 0 đên 3 là: ", arr4.slice(0, 3));
+        console.log("Sắp xếp mảng: ", arr4.sort().reverse());
+    </script>
+</body>
+
+</html>
